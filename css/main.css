@@ -1269,3 +1269,57 @@ footer {
 .copyright p a:hover {
   color: #61D2B4;
 }
+
+/* added by bhoj */
+.slid-img-container {
+  position: relative;
+  height: 300px !important;
+  overflow: hidden;
+  margin: 0 8% 15px 8%;
+  /* box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19); */
+  transition-duration: 0.6s;
+}
+.slid-img-container:hover .ole-book-name {
+  bottom: 0% !important;
+  /* top: 75%; */
+  /* display:block */
+}
+
+.ole-book-name {
+  /* display:none; */
+  position: absolute;
+  bottom: -30%;
+  color: white;
+  background:#34495e;
+  /* rgba(270, 270, 270, 0.8);*/
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 0;
+  margin-left:-15px;
+  transition-duration: 0.4s;
+  z-index: 10;
+}
+
+
+@media only screen and (max-width: 680px) {
+
+  .ole-book-name {
+    display: none;
+  }
+}
+.slid-img-container {
+  position: relative;
+  height: 320px !important;
+  overflow: hidden;
+  margin: 0 8% 15px 8%;
+  /* box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.6s;
+}
+
+
+/* End:added by bhoj */
